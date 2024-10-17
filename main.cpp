@@ -63,7 +63,6 @@ pthread_join(one_pthread, nullptr);
 // This is using One Thread, using 1 Thread to calculate the percentage of students who passed.
 cout << "Using One Threads, the amount of students that passed the exam was " << Passed_Percentage(one_thread.passed, StudentList.size()) << "%." << endl;
 
-
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= MULTIPLE THREADS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
 pthread_t threads[num_threads];
 Thread_data thread_data[num_threads];
@@ -87,8 +86,6 @@ for (int i = 0; i < num_threads; i++){
 }
 // This is using Multiple threads, depending on the input of the user. This will calculate the percentage of the students who passed.
 cout << "Using Multiple Threads, the amount of students that passed the exam was " << Passed_Percentage(many_threads_passed, StudentList.size()) << "%." << endl;
-
-
 
 return 0;
 }
